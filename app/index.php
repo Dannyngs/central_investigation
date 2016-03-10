@@ -8,75 +8,70 @@ $rs = $db->query("SELECT* FROM T_Showcase");
 require_once 'header.php';
 ?>
 
+ <div class="content">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+             
+            </ol>
 
-   <!-- SLIDER -->
-        <div id="outerslider">
-        	<div id="slidercontainer">
-            	<section id="slider">
-                <div class="box_skitter box_skitter_large">
-                    <ul>
-                        <li>
-                            <img src="_/images/banner1.jpg" alt="" />
-                          
-                        </li>
-                        <li>
-                            <img src="_/images/banner2.jpg" alt="" />
-                           
-                        </li>
-                       
-                    </ul>
-                </div>
-                </section>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <a href=""><img src="_/images/banner1.jpg" alt="..."></a>
+               
+              </div>
+              <div class="item">
+                 <a href=""><img src="_/images/banner1.jpg" alt="..."></a>
+               
+              </div>
+             
             </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
         </div>
-        <!-- END SLIDER -->
-        
-        <!-- BEFORE CONTENT -->
-        <div id="outerbeforecontent">
-        	<div id="beforecontent">
-            	<section id="beforethecontent">
-					<div class="intro-l">
-                    	<h2><?php echo $system[$current_lang.'_description']?></h2>
-                    </div>
-                    <div class="intro-r">
-                    	
-                    </div>
-                    <div class="clear"></div>
-                </section>
-            </div>
-        </div>
-        <!-- END BEFORE CONTENT -->
-        
-        <!-- MAIN CONTENT -->
-        <div id="outermain">
-        	<div id="maincontent">
-        	<section id="mainthecontent">
-            
-				<article>
-                   <?php  foreach($showcases as $show)          
+        <div class="container ptb20">
+           <div class="row">
+              <h3 class="title text-center"><span><?php echo $lang['server'];?></span></h3>
+              
+
+              <?php  foreach($showcases as $show)          
 {?>   
-                	<div class="one_third">
-                    	<a href="<?php echo $show['link'];?>" class="more"><div class="frame">
-                    	<img src="<?php echo $imgurl.$show['img'];?>" alt="" /><h5><?php echo $show[$current_lang.'_title']?></h5>
-                            </div></a>
-                        <p><?php echo $show[$current_lang.'_cont']?> <a href="<?php echo $show['link'];?>" class="more">Read More</a></p>
-                    </div>
-                	
+                     <div class="col-md-4 mt2">
+                <a class="inser" href="<?php echo $show['link'];?>">
+                  <div class="maxw">
+                    <img src="<?php echo $imgurl.$show['img'];?>">
+                  </div>
+                  
+                  <div class="move">
+                    <button type="button" class="btn btn-primary mt50"><?php echo $lang['more'];?></button>
+                  </div>
+                </a>
+                <h3 class="text-center"><?php echo $show[$current_lang.'_title']?></h3>
+                <p class="p1"><?php echo $show[$current_lang.'_cont']?></p>
+              </div>
                     <?php
     }
-?>
+?> 
+               
+           </div>
+           <p class="text-center mt2 moret"><a href=""><?php echo $lang['more_ser'];?></a></p>
 
-                    
-                </article>
-         
-                <div class="clear"></div>
-            </section>
-            </div>
+
+
+
         </div>
-        <!-- END MAIN CONTENT -->
-     
-        
-  
+    </div><!--content end-->
 
 <?php
 require_once 'footer.php';
