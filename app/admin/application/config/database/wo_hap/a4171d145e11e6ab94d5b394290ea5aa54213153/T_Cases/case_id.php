@@ -1,0 +1,2 @@
+<?php exit; ?>
+{"field":"case_id","label":"case_id","type":"text","type_options":{"size":"210","width":"300","height":"100","thumbnail":"mini"},"validation":"","db_options":{"table":"T_Cases"},"list_choose":"default","multiple":""}
