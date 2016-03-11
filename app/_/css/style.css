@@ -7,6 +7,7 @@ a:active,a:focus{outline:none;}
 .mt4{margin-top:4%}
 .mt6{margin-top:6%}
 .mt50{margin-top:50%;margin-left:15px;}
+.mb{margin-bottom:30px;}
 
 .maxw{text-align:center;}
 .maxw img{max-width:100%;}
@@ -19,6 +20,7 @@ a:active,a:focus{outline:none;}
 .fs19{font-size:1.2em;}
 .fcblue,.p2 h3,.p2 b,.p3 h3{color:#5493ae;}
 .fcb{color:#1a1a1a;}
+.fcw{color:#fff;}
 
 @media (min-width:1200px){.container{width:1062px}}
 .navbar-brand{height:auto;}
@@ -47,7 +49,7 @@ a:active,a:focus{outline:none;}
 .footer-bg{background:url('../images/foot-bg.jpg') center right no-repeat; }
 .copy{font-size:14px;color:#1a1a1a;margin-top:-8px}
 .rlicon{font-size:28px;margin-top:15px;}
-.p3{border-bottom:1px solid #fff;padding-bottom:25px;}
+.p3{border-bottom:1px solid #fff;padding-bottom:30px;}
 .row .p3:last-child{border:none;}
 .contact{background:url('../images/cont-bg.jpg') center no-repeat;}
 .bg-b{background-color:#0a263a;border-color:#0a263a;}

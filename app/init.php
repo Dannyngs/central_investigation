@@ -50,8 +50,12 @@ switch ($current_lang) {
   $lang_file = 'sim.php';
   break;
 
-  default:
+  case 'tra':
   $lang_file = 'tra.php';
+  break;
+
+  default:
+  $lang_file = 'eng.php';
 
 }
 include_once 'lang/'.$lang_file;

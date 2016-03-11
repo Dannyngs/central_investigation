@@ -5,17 +5,17 @@
                 <img src="_/images/logo2.png">
              </div>
              <div class="col-md-7 mt4">
-               <p>本社是一間經驗豐富，最具規模之香港私家偵探社。部份調查員從事偵探行業經驗超過十年，亦有部份調查員為前狗仔隊要員。業務範圍遍及世界各地，信心保證。<br/>憑多年來所累積的辦案經驗，已成功為香港及世界各地眾多委托人偵破無數各類型案件，如通姦證據、伴侶調查、商業調查、工傷查證、背景調查等案件。</p>
+               <p><?php echo $system[$current_lang.'_description']?></p>
              </div>
              <div class="col-md-5 mt4">
-                 <p class="fs19"><b>24小時熱線電話：</b>2370  1160 金先生</p>
-                 <p class="fs19"><b>電郵：</b><a class="fcb" href="mailto:central23701160@yahoo.com.hk">central23701160@yahoo.com.hk</a></p>
-                   <p class="fs19"><b>地址：</b>香港西營盤正街18號啓正中心18樓1806室</p>
+                 <p class="fs19"><b><?php echo $lang['hotl']?>：</b><?php echo $system['tel']?> <?php echo $system[$current_lang.'_name']?></p>
+                 <p class="fs19"><b><?php echo $lang['email']?>：</b><a class="fcb" href="mailto:<?php echo $system['emai']?>"><?php echo $system['emai']?></a></p>
+                   <p class="fs19"><b><?php echo $lang['add']?>：</b><?php echo $system[$current_lang.'_address']?></p>
              </div>
            </div>
            <div class="row mt2">
              <div class="col-md-12">
-               <p class="fcblue">本公司跟客戶簽訂委託協議書，並承諾所有資料絕對保密。</p>
+               <p class="fcblue"><?php echo $lang['footw']?></p>
                <p class="copy">© 2016 central investigations. All rights reserved.</p>
              </div>
            </div>
@@ -33,17 +33,19 @@
      event.preventDefault();
  $('#mysubmit').attr("disabled",true); 
      var myname=$('#myname').val();
-    var myemail=$('#myemail').val();
+     var myemail=$('#myemail').val();
+     var mytel=$('#mytel').val();
      var mymsg=$('#mymsg').val();
 console.log(myname);
-   if( myname=="" || myemail==""||mymsg=="")
+   if( myname=="" || myemail==""|| mytel=="" || mymsg=="")
        return alert("請完整填寫信息");
-     
+ 
      $.post("mail.php",
      {
     myname:myname,
-   myemail :myemail,
-         mymsg:mymsg
+    myemail :myemail,
+    mytel:mytel,
+    mymsg:mymsg
      },
   function(data,status){
          
@@ -52,12 +54,22 @@ console.log(myname);
               alert("遞交失敗，請重試！");
               $('#mysubmit').attr("disabled",false); 
          }else{
-         $('#myname').val("");$('#myemail').val("");$('#mymsg').val("");
+         $('#myname').val("");$('#myemail').val("");$('#mytel').val("");$('#mymsg').val("");
          alert("遞交成功！");}
         
   });
      
- });  
+ }); 
+
+ $("#myname,#myemail,#mytel,#mymsg").blur(function(){
+     var myname=$('#myname').val();
+     var myemail=$('#myemail').val();
+     var mytel=$('#mytel').val();
+     var mymsg=$('#mymsg').val();
+     if (myname!=="" && myemail!==""&& mytel!=="" && mymsg!=="") 
+      $('#mysubmit').attr("disabled",false); 
+    
+ }); 
    
  });
 </script>
