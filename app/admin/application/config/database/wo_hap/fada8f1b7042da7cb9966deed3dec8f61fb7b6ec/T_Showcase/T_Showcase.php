@@ -1,2 +1,0 @@
-<?php exit; ?>
-{"ids":["tra_title","sim_title","link","img","tra_cont","sim_cont"],"table":{"crudTitle":"T_Showcase manager","crudRowsPerPage":"20"},"filter":{"list":["id","sim_title","tra_title","img","link","sim_cont","tra_cont"],"atrr":{"id":{"alias":"id"}}},"column":{"list":["id","chi_title","eng_title","img","link","chi_cont","eng_cont","sim_title","tra_title","sim_cont","tra_cont"],"actived":["id","img","tra_title"],"atrr":{"id":{"alias":"id"}}},"frm_type":"2"}
