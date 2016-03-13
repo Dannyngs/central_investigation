@@ -20,5 +20,9 @@ $lang['tel'] ="Tel";
 $lang['msg'] ="Message";
 $lang['sub'] ="Submit";
 $lang['ctw'] ="For English";
+$lang['step1'] ="abc";
+$lang['step2'] ="aba";
+$lang['step3'] ="adf";
+$lang['step4'] ="adfsad";
 
 ?>

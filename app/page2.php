@@ -1,6 +1,6 @@
 <?php
 require_once 'init.php';
-  $rs = $db->query("SELECT* FROM T_Page where id=".$_GET['id']);
+  $rs = $db->query("SELECT* FROM T_Page where id=2");
     $page = $rs->fetch();
 
 
@@ -30,7 +30,7 @@ require_once 'header.php';
            <div class="row ptb20">
              <div class="col-md-2 maxw">
                 <img src="_/images/icon1.png">
-                <p class="mt6"><?php echo $page[$current_lang.'_step1']?></p>
+                <p class="mt6"><?php echo $lang['step1']?></p>
              </div>
              <div class="col-md-1 rlicon text-center">
                <span class="glyphicon glyphicon-menu-right hidden-xs hidden-sm" aria-hidden="true"></span>
@@ -39,7 +39,7 @@ require_once 'header.php';
 
               <div class="col-md-2 maxw">
                 <img src="_/images/icon2.png">
-                <p class="mt6"><?php echo $page[$current_lang.'_step2']?></p>
+                <p class="mt6"><?php echo $lang['step2']?></p>
              </div>
 
               <div class="col-md-1 rlicon text-center">
@@ -49,7 +49,7 @@ require_once 'header.php';
 
              <div class="col-md-3 maxw">
                 <img src="_/images/icon3.png">
-                <p class="mt6"><?php echo $page[$current_lang.'_step3']?></p>
+                <p class="mt6"><?php echo $lang['step3']?></p>
              </div>
 
               <div class="col-md-1 rlicon text-center">
@@ -59,7 +59,7 @@ require_once 'header.php';
 
               <div class="col-md-2 maxw">
                 <img src="_/images/icon4.png">
-                <p class="mt6"><?php echo $page[$current_lang.'_step4']?></p>
+                <p class="mt6"><?php echo $lang['step4']?></p>
              </div>
 
 

@@ -1,7 +1,7 @@
 <?php
 require_once 'init.php';
-$rs = $db->query("SELECT* FROM T_Showcase");
-    $showcases = $rs->fetchAll();
+$rs = $db->query("SELECT* FROM T_Product where shown_homepage=1 limit 3");
+    $services = $rs->fetchAll();
 ?>
 
 <?php
@@ -45,10 +45,10 @@ require_once 'header.php';
               <h3 class="title text-center"><span><?php echo $lang['server'];?></span></h3>
               
 
-              <?php  foreach($showcases as $show)          
+              <?php  foreach($services as $show)          
 {?>   
                      <div class="col-md-4 mt2">
-                <a class="inser" href="<?php echo $show['link'];?>">
+                <a class="inser" href="ser-post.php?id=<?php echo $show['id'];?>">
                   <div class="maxw">
                     <img src="<?php echo $imgurl.$show['img'];?>">
                   </div>
@@ -58,14 +58,14 @@ require_once 'header.php';
                   </div>
                 </a>
                 <h3 class="text-center"><?php echo $show[$current_lang.'_title']?></h3>
-                <p class="p1"><?php echo $show[$current_lang.'_cont']?></p>
+                <p class="p1"><?php echo $show[$current_lang.'_exp']?></p>
               </div>
                     <?php
     }
 ?> 
                
            </div>
-           <p class="text-center mt2 moret"><a href=""><?php echo $lang['more_ser'];?></a></p>
+           <p class="text-center mt2 moret"><a href="services.php"><?php echo $lang['more_ser'];?></a></p>
 
 
 

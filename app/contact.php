@@ -10,7 +10,7 @@ require_once 'header.php';
 
 <div class="content">
        <div class="maxw">
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.368570998154!2d114.15083941441071!3d22.339707947109794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404075181a9a0f9%3A0xa0e9a27987b7b342!2z6ZW35rKZ54Gj6Z2S5bGx6YGTNDY56Jmf6IGv6YKm5buj5aC0!5e0!3m2!1szh-TW!2shk!4v1456893112147" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe><br /><br />
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.7477020808606!2d114.13997931425774!3d22.287545048991486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403ff80f212c839%3A0x8933f435b4b7d9e6!2z6KW_54ef55uk5q2j6KGXMTjomZ_llZ_mraPkuK3lv4M!5e0!3m2!1szh-TW!2shk!4v1457763191423" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
        </div>
         
         <div class="container ptb20">
@@ -47,7 +47,7 @@ require_once 'header.php';
              <input id="myemail" type="email" class="form-control mt4" placeholder="<?php echo $lang['email']?>">
            </div>
            <div class="col-md-6 mt2">
-             <textarea id="mymsg" class="form-control" rows="5" placeholder="<?php echo $lang['msg']?>"></textarea>
+             <textarea id="mymsg" class="form-control" style="height:127px;" placeholder="<?php echo $lang['msg']?>"></textarea>
            </div>
            <div class="col-md-12 mt2 text-center">
               <button id="mysubmit" type="submit" class="btn btn-primary bg-b"><?php echo $lang['sub']?></button>
