@@ -39,15 +39,17 @@ require_once 'header.php';
     <div class="contact">
      <div class="container ptb20">
        <div class="row">
-        <p class="text-center fcw"><?php echo $lang['ctw']?></p>
+         <div class="col-md-12">   
+            <p class="text-center fcw"><?php echo $lang['ctw']?></p>
+           </div>
          <form>
            <div class="col-md-4 col-md-offset-1 mt2">
              <input id="myname" type="text" class="form-control" placeholder="<?php echo $lang['name']?>">
-             <input id="mytel" type="tel" class="form-control mt4" placeholder="<?php echo $lang['tel']?>">
-             <input id="myemail" type="email" class="form-control mt4" placeholder="<?php echo $lang['email']?>">
+             <input id="mytel" type="tel" class="form-control mt2" placeholder="<?php echo $lang['tel']?>">
+             <input id="myemail" type="email" class="form-control mt2" placeholder="<?php echo $lang['email']?>">
            </div>
            <div class="col-md-6 mt2">
-             <textarea id="mymsg" class="form-control" style="height:127px;" placeholder="<?php echo $lang['msg']?>"></textarea>
+             <textarea id="mymsg" class="form-control" style="height:140px;" placeholder="<?php echo $lang['msg']?>"></textarea>
            </div>
            <div class="col-md-12 mt2 text-center">
               <button id="mysubmit" type="submit" class="btn btn-primary bg-b"><?php echo $lang['sub']?></button>

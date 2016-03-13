@@ -16,7 +16,7 @@ require_once 'header.php';
        </div>
         
         <div class="container ptb20">
-           <div class="row">
+           <div class="row mb2">
               <h3 class="title text-center"><span><?php echo $page[$current_lang.'_title']?></span></h3>
               
                <div class="col-md-12 mt4 p1">
