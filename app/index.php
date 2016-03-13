@@ -50,7 +50,7 @@ require_once 'header.php';
                      <div class="col-md-4 mt2">
                 <a class="inser" href="ser-post.php?id=<?php echo $show['id'];?>">
                   <div class="maxw">
-                    <img src="<?php echo $imgurl.$show['img'];?>">
+                    <img src="<?php echo $imgurl.$show['image'];?>">
                   </div>
                   
                   <div class="move">
