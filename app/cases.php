@@ -10,7 +10,7 @@ require_once 'header.php';
 
  <div class="content">
        <div class="maxw">
-         <img src="_/images/about-ban.jpg">
+         <img src="_/images/cases.jpg">
        </div>
         
         <div class="container ptb20">

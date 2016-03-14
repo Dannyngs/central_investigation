@@ -14,7 +14,8 @@ require_once 'header.php';
             <ol class="carousel-indicators">
               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
               <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-             
+                           <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+
             </ol>
 
             <!-- Wrapper for slides -->
@@ -24,7 +25,12 @@ require_once 'header.php';
                
               </div>
               <div class="item">
-                 <a href=""><img src="_/images/banner1.jpg" alt="..."></a>
+                 <a href=""><img src="_/images/banner2.jpg" alt="..."></a>
+               
+              </div>
+                
+                 <div class="item">
+                 <a href=""><img src="_/images/banner3.jpg" alt="..."></a>
                
               </div>
              

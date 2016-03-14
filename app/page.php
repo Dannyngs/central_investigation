@@ -13,7 +13,7 @@ require_once 'header.php';
  
  <div class="content">
        <div class="maxw">
-         <a href="server.php"><img src="<?php echo $page['banner']?>"></a>
+         <a href="services.php"><img src="<?php echo $page['banner']?>"></a>
        </div>
         
         <div class="container ptb20">
