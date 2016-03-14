@@ -1,6 +1,6 @@
 <?php
 require_once 'init.php';
-  $rs = $db->query("SELECT* FROM T_Page where id=".$_GET['id']);
+  $rs = $db->query("SELECT* FROM T_Page where id=1");
     $page = $rs->fetch();
 
 
@@ -13,7 +13,7 @@ require_once 'header.php';
  
  <div class="content">
        <div class="maxw">
-         <a href="services.php"><img src="<?php echo $page['banner']?>"></a>
+         <a href="services.php"><img src="_/images/about.jpg"></a>
        </div>
         
         <div class="container ptb20">
