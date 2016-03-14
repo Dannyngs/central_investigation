@@ -11,7 +11,7 @@ a:active,a:focus{outline:none;}
 
 
 .maxw{text-align:center;}
-.maxw img{max-width:100%;}
+.maxw img{max-width:100%;    border-radius: 8px;}
 .round img{border-radius:6px;}
 
 .p1{font-size:16px;line-height:27px;}

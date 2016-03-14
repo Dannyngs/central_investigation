@@ -12,7 +12,7 @@ require_once 'header.php';
 
  <div class="content">
        <div class="maxw">
-         <a href="/server.php"><img src="_/images/confidential.jpg"></a>
+         <a href="cases.php"><img src="_/images/confidential.jpg"></a>
        </div>
         
         <div class="container ptb20">

@@ -21,16 +21,16 @@ require_once 'header.php';
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
               <div class="item active">
-                <a href=""><img src="_/images/banner1.jpg" alt="..."></a>
+                <a href="cases.php"><img src="_/images/banner1.jpg" alt="..."></a>
                
               </div>
               <div class="item">
-                 <a href=""><img src="_/images/banner2.jpg" alt="..."></a>
+                 <a href="cases.php"><img src="_/images/banner2.jpg" alt="..."></a>
                
               </div>
                 
                  <div class="item">
-                 <a href=""><img src="_/images/banner3.jpg" alt="..."></a>
+                 <a href="cases.php"><img src="_/images/banner3.jpg" alt="..."></a>
                
               </div>
              
